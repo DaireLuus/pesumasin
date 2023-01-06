@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .scene {
+    display: flex;
+    height: 100vh;
+    background: #92bfd1;
+    font-size: 14px;
+    
+  }
+
+  .scene * {
+    position: absolute;
+  }
+
+/*kuivav pesu*/
+
+.twelve {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px; 
+    opacity: 0;	
+  } 
+ .dry {
+	width: 100%;
+    height: 100%;
+ }
+  
+/* pesumasin*/
+  .first {
+    width: 300px;
+    height: 400px;
+    top: 100px;
+    left: 200px;   
+  }
+.machine {
+    width: 300px;
+    height: 400px;
+   }
+
+/*pesumasina sisemus*/
+.second {
+    width: 190px;
+    height: 200px;
+    top: 203px;
+    left: 265px; 
+    opacity: 0;
+}
+.door1 {
+    width: 190px;
+    height: 200px;
+      
+}
+
+/*pesumasina luuk*/
+
+.third {
+  width: 200px;
+  height: 200px;
+  top: 200px;
+  left: 118px;  
+  opacity: 0;
+}
+
+.door2 {
+    width: 200px;
+    height: 200px;
+     
+    
+}
+/*vesi*/
+
+.tenth {
+  width: 188px;
+  height: 190px;
+  top: 210px;
+  left: 257px; 
+  opacity: 0;
+  }
+
+.water {
+  width: 188px;
+  height: 190px;
+
+}
+
+/*seebimullid*/
+.nineth {
+  width: 90px;
+  height: 90px;
+  top: 250px;
+  left: 297px;  
+  opacity: 0;
+}
+.soap {
+  width: 90px;
+  height: 90px;
+  
+}
+
+/*pesu masinas*/
+.eleventh {
+  width: 240px;
+  height: 215px;
+  top: 196px;
+  left: 237px;  
+  opacity: 0;
+}
+.laundry4 {
+  width: 240px;
+  height: 215px;
+  
+}
+
+/*pesukorv*/
+.forth {
+  width: 200px;
+  height: 150px;
+  top: 350px;
+  left: 520px;
+
+}
+
+.basket {
+    width: 200px;
+    height: 150px;
+    
+
+}
+
+/*käterätid*/
+.sixth {
+    width: 100px;
+    height: 50px;
+    top: 375px;
+    left: 520px;
+    
+}
+
+.laundry1 {
+    width: 100px;
+    height: 50px;
+    
+
+}
+
+/*pesu kaks*/
+
+.seventh {
+  width: 150px;
+  height: 80px;
+  top: 365px;
+  left: 570px;
+  
+}
+.laundry2 {
+    width: 150px;
+    height: 80px;
+        
+}
+
+/* pesu kolm*/
+
+.eighth {
+  width: 150px;
+  height: 80px;
+  top: 400px;
+  left: 500px;
+  
+}
+.laundry3 {
+    width: 150px;
+    height: 80px;
+    
+    
+}
+
+
+
+/*pesuvahend*/
+.fifth {
+  width: 80px;
+  height: 100px;
+  top: 400px;
+  left: 690px;
+}
+
+
+.washgel {
+    width: 80px;
+    height: 100px;
+    
+}
+
+
+
+
+/* pesumasina värisemine*/
+@keyframes shake {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0);
+    }
+    25% {
+      transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+    }
+    50% {
+      transform: translate(-0.5px, -0.5px) rotate(0.5deg);
+    }
+  }
+
+  /*pesu sisse*/
+
+  @keyframes entry {
+    0% {
+        transform: scale(1) translate(0,0);
+      }
+      
+      100% {
+        transform: scale(0.65) translate(-350px, -150px) ;
+      }
+
+  }
+
+  @keyframes entryOne {
+    0% {
+        transform: scale(1) translate(0,0);
+      }
+      
+      100% {
+        transform: scale(0.6) translate(-480px, -180px) ;
+      }
+
+  }
+
+  @keyframes entryTwo {
+    0% {
+        transform: scale(1) translate(0,0);
+      }
+      
+      100% {
+        transform: scale(0.65) translate(-380px, -175px) ;
+      }
+
+  }
+
+  /*masin seest nähtamatuks*/
+
+  @keyframes insideOut {
+    0% {
+        opacity: 1;
+      }
+      
+      100% {
+        opacity: 0;
+      }
+
+  }
+
+  /*masin seest nähtavaks*/
+  @keyframes insideIn {
+    0% {
+        opacity: 0;
+      }
+      
+      100% {
+        opacity: 1;
+      }
+
+  }
+
+  /*uks kinni*/
+
+  @keyframes doorClose {
+    0% {
+      transform: translate(0, 0) skew(0deg, 00deg); 
+      opacity: 1;
+    }
+    50% {
+      transform: translate(50px, 0) skew(10deg, 10deg);
+      opacity: 0.9;
+    }
+    75% {
+      transform: translate(90px, 0) skew(15deg, 15deg);
+      opacity: 0.1;
+    }
+    80% {
+      transform: translate(92px, 0) skew(16deg, 16deg);
+      opacity: 0;
+    }
+    
+   100% {
+        transform: translate(100px, 0px) skew(20deg, 20deg);
+        opacity: 0;
+      }
+     
+
+  }
+
+  /*uks lahti*/
+  @keyframes doorOpen {
+    0% {
+         transform: translate(100px, 0px) skew(20deg, 20deg);
+         opacity: 0;
+       }
+       25% {
+         transform: translate(75px, 0) skew(15deg, 15deg);
+         opacity: 0.8;
+       }
+       50% {
+        transform: translate(50px, 0) skew(10deg, 10deg);
+        opacity: 1;
+      }
+       
+       100% {
+         transform: translate(0, 0) skew(0deg, 00deg); 
+         opacity: 1;
+       }
+ 
+   }
+  
+ 
+
+
+  /*pesuaine panek*/
+
+  @keyframes washEntry {
+    0% {
+        transform: scale(1) translate(0,0) rotate(0deg);
+      }
+      
+      50% {
+        transform: scale(0.7) translate(-640px, -480px) rotate(-90deg);
+      }
+     100% {
+        transform: scale(1) translate(0,0) rotate(0deg);
+      }
+  }
+
+  
+
+  @keyframes water{
+    0% {
+      opacity: 1;
+      transform:  rotate(0deg);
+    } 
+    50% {
+      opacity: 1;
+      transform:  rotate(360deg);
+    }
+    100% {
+      opacity: 1;
+      transform:  rotate(0deg);
+    }
+
+  }
+  
+  @keyframes dryLaundry {
+    0% {
+         transform:  skew(50deg, 50deg);
+         opacity: 1;
+       }
+       
+       70% {
+         transform:  skew(0deg, 0deg); 
+         opacity: 1;
+       }
+       100% {
+         transform:  skew(0deg, 0deg); 
+         opacity: 1;
+       }
+   }
+  
